@@ -6,7 +6,7 @@ export async function getStaticProps(){
 const supabaseAdmin = createClient(
   /*process.env.NEXT_PUBLIC_SUPABASE_URL || '',
   process.env.SUPABASE_SERVICE_ROLE_KEY || ''*/
-  'https://dmhzwruowsngalaozvlh.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRtaHp3cnVvd3NuZ2FsYW96dmxoIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTY0OTQwNTE0MCwiZXhwIjoxOTY0OTgxMTQwfQ.LGC8iuiREzK7lMTWfGJF0N_fFvUwz-L2UW3cxo5T0DI'
+  'https://YOUR_KEY.supabase.co', 'YOUR_API_KEY'
   )
 
   const { data } = await supabaseAdmin.from('images').select('*').order('id')
